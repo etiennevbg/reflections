@@ -11,7 +11,7 @@ the staging area gives the opportunity to choose which files I want to commit an
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
-It helps to create new versions of your programm, for example toadd possible features or to create an alternative versio (ex: an easy mode)
+It helps to create new versions of your programm, for example to add possible features or to create an alternative versio (ex: an easy mode)
 
 How do the diagrams help you visualize the branch structure?
 it shows the reachability of commits in branches 
@@ -19,6 +19,10 @@ it shows the reachability of commits in branches
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+It keeps everything that was add in the two branches and delete everything that was removed from the original commit in at least one of the branches that are merged together
+As it keeps informations from the tip of the two branches, the parents of the merging commit are them both
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+automatic merging does not resolve conflicts, and manually merging allows to choose which change in the both commits the programmer wants to keep
+automatic merging is way more efficient ant quick if there is no conflict
